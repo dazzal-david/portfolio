@@ -1,2 +1,2 @@
 # portfolio
-Simple Portpolio Website
+Simple Portfolio Website
