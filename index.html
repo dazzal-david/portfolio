@@ -3,257 +3,487 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio of a web developer and designer specializing in creating responsive and visually appealing websites using HTML, CSS, JavaScript, and modern frameworks.">
+    <meta name="description" content="Professional portfolio of Dazzal David, a web developer and designer specializing in creating responsive and visually appealing websites using HTML, CSS, JavaScript, and modern frameworks.">
     <meta name="keywords" content="web developer, web designer, portfolio, HTML, CSS, JavaScript, responsive design, frontend development, UX/UI design, web development">
-    <title>Portfolio of Dazzal David</title>
+    <title>Dazzal David | Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Dazzal David</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </label>
+    </div>
 
-    <nav id="hamburger-nav">
-        <div class="logo">Dazzal David</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#hero">DD</a>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-
-    <section id="profile" class="section-container">
-        <div class="section-pic-container">
-            <img src="./assets/profile-pic.png" alt="John Doe Profile Pic">
-        </div>
-        <div class="section-text">
-            <p class="section-text-p1">Hello, I'm </p>
-            <h1 class="title">Dazzal David</h1>
-            <p class="section-text-p2">i make stuffs.</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-                My CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contact
-                </button>
-            </div>
-            <div class="social-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn Profile"
-                class="icon" onclick="location.href='https://www.linkedin.com'">
-                <img src="./assets/github.png" alt="Github Profile"
-                class="icon" onclick="location.href='https://www.github.com'">
-            </div>
-        </div>
-
-    </section>
-
-    <section id="about">
-        <p class="section-text-p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section-pic-container">
-                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-containers">
-                        <img src="./assets/experience.png" alt="experience-icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>Fulll Stack Development</p>
-                    </div>
-                    <div class="details-containers">
-                        <img src="./assets/education.png" alt="education-icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>B.Tech Computer Science</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugiat odio reprehenderit voluptas eius ab. Id dolorum quaerat eveniet, architecto nulla totam facilis veritatis et, cumque quod aliquam tempore explicabo.</p>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="arrow-logo" class="arrow icon" onclick="location.href='./#experience'">
-    </section>
+    </header>
 
-    <section id="experience">
-        <p class="section-text-p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">Web Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark-png" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark-png" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark-png" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark-png" class="icon">
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark-png" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark-png" class="icon">
-                            <div>
-                                <h3>UI/UX</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="intro-text">Hello, I'm</p>
+                    <h1 class="name">Dazzal David</h1>
+                    <h2 class="title">Full Stack Developer</h2>
+                    <p class="tagline">I create digital experiences that make an impact.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn primary-btn" onclick="window.open('./assets/resume-example.pdf')">Download CV</a>
+                        <a href="#contact" class="btn secondary-btn">Let's Talk</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.github.com" target="_blank" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter Profile">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="details-containers">
-                    <h2 class="experience-sub-title"> Expertise</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark-png" class="icon">
-                            <div>
-                                <h3>Photoshop</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark-png" class="icon">
-                            <div>
-                                <h3>Video Editing</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark-png" class="icon">
-                            <div>
-                                <h3>AWS EC2</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark-png" class="icon">
-                            <div>
-                                <h3>Git & Networks</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
+                <div class="hero-image">
+                    <div class="profile-img-container">
+                        <img src="./assets/profile-pic.png" alt="Dazzal David" class="profile-img">
                     </div>
                 </div>
             </div>
-        </div>
-        <img src="./assets/arrow.png" alt="arrow-logo" class="arrow icon" onclick="location.href='./#projects'">
-    </section>
-
-    <section id="projects">
-        <p class="section-text-p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="projects-container">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/project-1.png" alt="project-1" class="project-img">
-                </div>
-                <h2 class="project-title">Project One</h2>
-                <div class="project-buttons">
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">
-                        Github
-                    </button>
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="./assets/project-2.png" alt="project-2" class="project-img">
-                </div>
-                <h2 class="project-title">Project Two</h2>
-                <div class="project-buttons">
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">
-                        Github
-                    </button>
-                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">
-                        Live Demo
-                    </button>
-                </div>
+            <div class="scroll-indicator">
+                <a href="#about">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div>
+                        <span class="scroll-text">Scroll</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
-    
 
-    <section id="contact">
-        <p class="section-text-p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:dazzal2003@gmail.com">dazzal2003@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-          </div>
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./assets/about-pic.png" alt="Dazzal David" class="about-img">
+                    <div class="experience-badge">
+                        <span class="years">3+</span>
+                        <span class="text">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Experience</h3>
+                            <p>Full Stack Development</p>
+                        </div>
+                        <div class="about-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Education</h3>
+                            <p>B.Tech Computer Science</p>
+                        </div>
+                    </div>
+                    <p class="about-description">
+                        I'm a passionate full-stack developer with a strong foundation in both front-end and back-end technologies. 
+                        My journey in tech has equipped me with the skills to build responsive, user-friendly applications 
+                        that solve real-world problems. I'm constantly learning and adapting to new technologies to stay 
+                        at the forefront of web development.
+                    </p>
+                    <a href="#contact" class="btn primary-btn">Let's Connect</a>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Copyright &copy; 2024 Dazzal David. All Rights Reserved.</p>
+
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Explore My</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">Web Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML</h4>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS</h4>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>SQL</h4>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                            <div class="skill-info">
+                                <h4>UI/UX</h4>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-info">
+                                <h4>React.js</h4>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <div class="skill-info">
+                                <h4>NoSQL</h4>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <div class="skill-info">
+                                <h4>Python ML</h4>
+                                <span class="skill-level">Beginner</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M429.5 236.3L291.7 374.1 429.5 512H272l-59.1-59.1-78.8-78.8L272 236.3H429.5zM272 0L16 256l78.8 78.8L429.5 0H272z"/></svg></div>
+                            <div class="skill-info">
+                                <h4>Flutter</h4>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">Other Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-image"></i></div>
+                            <div class="skill-info">
+                                <h4>Photoshop</h4>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-film"></i></div>
+                            <div class="skill-info">
+                                <h4>Adobe Premiere Pro</h4>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-film"></i></div>
+                            <div class="skill-info">
+                                <h4>Final Cut Pro</h4>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                            <div class="skill-info">
+                                <h4>Arduino</h4>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <div class="skill-info">
+                                <h4>AWS EC2</h4>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Git & Networking</h4>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Browse My Recent</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="./assets/project-1.png" alt="SwooshFit Project" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SwooshFit</h3>
+                        <p class="project-description">
+                            A virtual shoe try-on experience that allows users to try on shoes virtually before buying. 
+                            Users can also view, add, and manage public shoe collections as tweets.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>DeepAR SDK</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dazzal-david/swooshfit" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://swooshfit.netlify.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="./assets/project-2.png" alt="Elderly Project" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Elderly</h3>
+                        <p class="project-description">
+                            A digital companion for elderly citizens, including medication tracker, reminders, 
+                            support, AI doctor, digital connect with friends option, and a caretaker interface.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Supabase</span>
+                            <span>Hugging Face AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dazzal-david/elderly" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="./assets/project-3.png" alt="Smart Parking App Project" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Parking App</h3>
+                        <p class="project-description">
+                            Designed to help users find and book parking spots conveniently. Features a real-time map 
+                            of available parking spots, vehicle selection, and QR code verification for booking slots.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Supabase</span>
+                            <span>Geolocator</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dazzal-david/smart-parking-app" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="./assets/project-4.png" alt="Lifelink Project" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Lifelink</h3>
+                        <p class="project-description">
+                            A Flutter app with Supabase for registering blood and organ donation, 
+                            as well as a screen for hospital and doctor search.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Supabase</span>
+                            <span>Dart</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dazzal-david/LifeLink" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Recognition & Awards</span>
+                <h2 class="section-title">Achievements</h2>
+            </div>
+            <div class="achievements-timeline">
+                <div class="achievement-item">
+                    <div class="achievement-date">2023</div>
+                    <div class="achievement-content">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h3>Nehru School of Business Karma Festival</h3>
+                            <p>Won the first prize for Best Management Team and Marketing Game.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-date">2025</div>
+                    <div class="achievement-content">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h3>Nehru School of Business Karma Festival</h3>
+                            <p>Secured the second position for Best Management Team and Marketing Game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:dazzal.david@example.com">dazzal.david@example.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin-in"></i>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com" target="_blank">linkedin.com/in/dazzaldavid</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p><a href="https://www.github.com" target="_blank">github.com/dazzaldavid</a></p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#hero">Dazzal David</a>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.github.com" target="_blank" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter Profile">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dazzal David. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
